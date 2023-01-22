@@ -36,11 +36,16 @@
                 border-bottom: 4px solid #613ae7;
 
             }
-            @media (max-width: 766px){
-                #hero{
-                    padding-top: 60px!important;
-                    height: 150%!important;
-                }
+            #infi{
+                overflow: hidden;
+                width: 700px!important;
+                transform-origin: top right!important;
+                position: relative;
+                right: -51%;
+                transform-style: preserve-3d;
+                transform: perspective(33px) rotateZ(24deg);
+                animation: scrolling 30s infinite cubic-bezier(1,1,1,1);
+                /* z-index: 1; */
             }
             @media (max-width: 1199px){
                 .disable{
@@ -72,19 +77,11 @@
                     top:-80%;
                  }
                 }
-                #infi{
-                overflow: hidden;
-                width: 700px!important;
-                transform-origin: top right!important;
-                position: relative;
-                right: -51%;
-                transform-style: preserve-3d;
-                transform: perspective(33px) rotateZ(24deg);
-                animation: scrolling 30s infinite cubic-bezier(1,1,1,1);
-                /* z-index: 1; */
-                }
             }
             @media (max-width: 766px){
+                #hero{
+                    padding-top: 60px!important;
+                }
                 #show-img{
                     width: 100%;
                     /* height: 400%; */
@@ -239,7 +236,7 @@ element.style {
     </header>
     
     <section id="hero" style="background-color: whitesmoke; padding-top: 80px;">
-        <div class="ui stackable two column grid" style="height: 100%;width: 100%;" >
+        <div class="ui stackable two column grid" >
             <div class="nine wide column" style="text-align: center;color: #5c5c5c; font-family:ubuntu-light;  font-weight: 900;">
                 <h1 style=" padding-top:15%;font-family: ubuntu-bold; font-size: 39px;font-weight: bolder;"><span style="color: #613ae7;">Invest</span> in your own groceries </h1>
                 <h1 style="color: black;font-family: ubuntu-bold; font-size: 39px;"> and earn <span style="color: #613ae7;">14%</span> returns.</h1>

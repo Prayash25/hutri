@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>Home</title>
+        <meta name="description" content="Startups template">
+        <meta name="keywords" content="Startups template">
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/toastr.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/aa6c3592cb.js" crossorigin="anonymous"></script>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!--[if lt IE 9]>
+            <script src="assets/js/html5.js"></script>
+            <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            .navigation-header .navigation-bar-left > li.active > a{
+                border-bottom: 4px solid #613ae7;
+
+            }
+            @media (max-width: 766px){
+                #hero{
+                    padding-top: 60px!important;
+                    height: 150%!important;
+                }
+            }
+            @media (max-width: 1199px){
+                .disable{
+                    display: none;
+                }
+                .f-spec{
+                    font-size: 20px;
+                }
+            }
+            @media (min-width: 766px){
+                #show{
+                    height: 100%;
+                }
+                #show-img{
+                    width:700px;
+                }
+
+                #up-footer-content{
+                    text-align: left;
+                    padding-left:  5%;
+                }
+                @keyframes scrolling{
+                 0%{
+                    right: 20%;
+                    top: 55%;
+                 }
+                 100%{
+                    right: -110%;
+                    top:-80%;
+                 }
+                }
+                #infi{
+                overflow: hidden;
+                width: 700px!important;
+                transform-origin: top right!important;
+                position: relative;
+                right: -51%;
+                transform-style: preserve-3d;
+                transform: perspective(33px) rotateZ(24deg);
+                animation: scrolling 30s infinite cubic-bezier(1,1,1,1);
+                /* z-index: 1; */
+                }
+            }
+            @media (max-width: 766px){
+                #show-img{
+                    width: 100%;
+                    /* height: 400%; */
+                    position: relative;
+                    z-index: 1;
+                }
+                #up-footer-content{
+                    text-align:center;
+                }
+                @keyframes scrolling{
+                 0%{
+                    /* right: 20%; */
+                    top: 0%;
+                 }
+                 100%{
+                    /* right: -110%; */
+                    top:325%;
+                 }
+                }
+                #infi{
+                width: 100%;
+                height: 50px;
+                /* transform-origin: bottom!important; */
+                position: relative;
+                /* right: -51%; */
+                transform-style: preserve-3d;
+                /* transform: perspective(33px) rotateZ(24deg); */
+                animation: scrolling 5s infinite cubic-bezier(1,1,1,1);
+                z-index: 1;
+                }
+            }
+            @media (min-width: 1000px){
+                #footer-input{
+                    left: 25%;
+                    top: 50%!important;
+                    width:45% ;
+                }
+
+            }
+            @media (max-width: 1000px){
+                
+
+            }
+            @media (min-width: 1200px){
+                #feature-line{
+                    width: 25%;
+                }
+                #feature-content{
+                    width: 75%;
+                }
+                .f-line{
+                    width: 180px!important;
+                }
+                #featuredTab li{
+                    margin-bottom: 10%;
+                }
+                .f-img{
+                    padding-left: 15%;
+                }
+                .f-spec{
+                    padding-left: 25%;
+                    margin-bottom: 15%;
+                }
+            }
+            
+            
+        #featuredTab li.active > a .tab-info{
+          background: #613ae7;
+        }
+        #featuredTab li > a .tab-info .tab-title {
+          font-size: 17px;
+          font-family: ubuntu-regular;
+          line-height: 21px;
+          color:#613ae7;
+          text-transform: uppercase;
+          padding-bottom: 10px;
+          font-weight: 600;
+        }
+        .navigation-toggle {
+    border: 1px solid #613ae7;
+}
+.navigation-toggle .icon-bar {
+    background: #613ae7;
+}
+
+element.style {
+    border-bottom: 3.5px solid #613ae7;
+    padding: 2px;
+    text-decoration: none;
+    font-family: ubuntu-light;
+    color: black;
+}
+@media (max-width: 767px){
+.navigation-header .navigation-bar > li > a:Hover, .navigation-header .navigation-bar > li.active > a {
+    color: #ffffff!important;
+    border-bottom: 2px solid white!important;
+}
+.navigation-header .navigation-bar > li > a:Hover, .navigation-header .navigation-bar > li > a {
+    color: #ffffff!important;
+    /* border-bottom: 2px solid white!important; */
+}
+}
+.navigation-header .navigation-bar > li.active > a {
+    border-bottom: 2px solid #613ae7;
+}
+.fixmenu-clone.navigation-header .navigation-toggle {
+    border: 1px solid #613ae7;
+}
+
+.fixmenu-clone.navigation-header .navigation-toggle .icon-bar {
+    background: #613ae7;
+}
+
+        </style>
+</head>
+<body id="landing-page" style="font-family: ubuntu-regular;">
+    <div id="mask">
+        <div id="loader"></div>
+    </div>
+    <header>
+        <nav class="navigation navigation-header" style="text-decoration: none;">
+            <div class="container">
+                <div class="navigation-brand" >
+                    <div class="brand-logo ">
+						<a href="index.html" class="logo"> <img src="assets/image/hutri.png" style="width: 25%;" alt=""></a>
+						<!-- <span class="sr-only">startup.ly</span> -->
+                    </div>
+                    <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown" data-target=".navigation-navbar" style="">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navigation-navbar">
+                    <ul class="navigation-bar navigation-bar-left">
+                        
+                        
+                    </ul>
+                    <ul class="navigation-bar navigation-bar-right">
+                        <li class="active"><a href="index.html" style="padding: 2px; text-decoration: none;font-family:ubuntu-light;color: black;">Home</a></li>
+                        <li><a href="#hero" style="font-family:ubuntu-light;color: black;text-decoration: none;">About</a></li>
+                        <li><a href="#features" style="text-decoration: none;font-family:ubuntu-light;color: black; ">Features</a></li>
+						<!-- <li><a href="#product" style="color: #1b1c1d;text-decoration: none;font-family:Arial, Helvetica, sans-serif ; ">Prices</a></li> -->
+                        <li><a href="faq.html" style="text-decoration: none;font-family:ubuntu-light;color: black; ">FAQ</a></li>
+                        <!-- <li><a href="#team" style="color: #1b1c1d;text-decoration: none;">Team</a></li> -->
+                        <li><a href="#footer" style="text-decoration: none;font-family:ubuntu-light;color: black; ">Contacts</a></li>
+                    </ul>  
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <section id="hero" style="background-color: whitesmoke;height: 100%; padding-top: 80px;">
+        <div class="ui stackable two column grid" style="height: 100%;width: 100%;" >
+            <div class="nine wide column" style="text-align: center;color: #5c5c5c; font-family:ubuntu-light;  font-weight: 900;">
+                <h1 style=" padding-top:15%;font-family: ubuntu-bold; font-size: 39px;font-weight: bolder;"><span style="color: #613ae7;">Invest</span> in your own groceries </h1>
+                <h1 style="color: black;font-family: ubuntu-bold; font-size: 39px;"> and earn <span style="color: #613ae7;">14%</span> returns.</h1>
+                <p style="color:#613ae7; font-size: 20px;">Invest for Rs 500 <span style="font-size: 50px; color: hsl(0deg 0% 85%);">|</span> Principle Guaranteed <span style="font-size: 50px; color: hsl(0deg 0% 85%);">|</span> Risk Free</p>
+                <p style="font-size: 36px;">Download Hutri</p>
+                
+                <button style="margin-top: 15px; background-color: #613ae7; border-radius: 50px;" class="ui huge primary button">
+                    IOS
+                    <p style="font-size: 10px;color: #5c5c5c;">Coming Soon</p>
+                </button>
+                <button style="margin-top: 15px; background-color:#613ae7 ;border-radius: 50px;" class="ui huge primary button">Android</button>
+            </div>
+            <div class="seven wide column" >
+                <!-- <div style="box-shadow: 2px 1px 1px 1px; width: 50%;"> -->
+                   <img src="assets/image/header.png" alt="" srcset="" style="width: 50%; position: relative;left: 25%;">
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+    <a id="showHere"></a>
+    <!-- <section id="features" class="section inverted" style="margin-top:0.1px;height: 100%; background-color: #f5f5f5;">
+        <div class="container">
+            <div class="section-content">
+                <div id="featuredTab">
+                    <ul class="list-unstyled animated hiding" data-animation="fadeInRight">
+                      <li class="active">
+                          <a href="#home" data-toggle="tab">
+                              <div class="tab-info" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                  <div class="tab-title">Lorem Dolor</div>
+                                  <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div>
+                              </div>
+                              
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#profile" data-toggle="tab">
+                              <div class="tab-info" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                  <div class="tab-title">Lorem Dolor</div>
+                                  <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div>
+                              </div>
+                              
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#messages" data-toggle="tab">
+                              <div class="tab-info" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                  <div class="tab-title">Lorem Dolor</div>
+                                  <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div>
+                              </div>
+                              
+                          </a>
+                      </li>
+                    </ul>
+                    
+                    <div class="tab-content animated hiding" data-animation="fadeInLeft">
+                      <div class="tab-pane in active" id="home"><img src="assets/image/feature1.jpeg" style="width: 600px;" class="img-responsive animated hiding" data-animation="fadeInLeft" alt="macbook" /></div>
+                      <div class="tab-pane" id="profile"><img src="assets/image/feature2.jpeg" style="width: 600px;"class="img-responsive animated hiding" data-animation="fadeInLeft" alt="macbook" /></div>
+                      <div class="tab-pane" id="messages"><img src="assets/image/feature3.jpeg" style="width: 600px;"class="img-responsive animated hiding" data-animation="fadeInLeft" alt="macbook" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="features" class="" style=" background-color: whitesmoke; position: relative; z-index: 4;margin-bottom: 0px;">
+        <p style="font-family:ubuntu-bold;color: black; padding-top: 10px; font-size: 45px;padding-left: 5%;">How it works,<span style="color: #613ae7;"> Perfectly!</span></p>
+        <p style="padding-left: 5%; font-size: 23px;font-family: ubuntu-regular; color:#666666;">Easily invest in your groceries in 4 Easy Steps! </p>
+          <div class="container">
+              <div class="section-content">
+                  <div id="featuredTab">
+                      <ul class="list-unstyled animated hiding" id="feature-line" data-animation="fadeInRight">
+                        <li class="active" >
+                            <a href="#first" data-toggle="tab">
+                                <div class="tab-info f-line"  style="border-radius: 30px;height: 70px;">
+                                    <div class="tab-title" style="font-size: 14px;">Choose Product</div>
+                                </div>
+                                <!--<div class="tab-icon"><span class="icon icon-multimedia-20"></span></div>-->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#second" data-toggle="tab">
+                                <div class="tab-info f-line" style=" border-radius: 30px;height: 70px;">
+                                    <div class="tab-title" style="font-size: 14px;">Lock in Time</div>
+                                    <!-- <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div> -->
+                                </div>
+                                <!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
+                            </a>
+                        </li>
+                        <li>
+                          <a href="#third" data-toggle="tab">
+                              <div class="tab-info f-line"style=" border-radius: 30px;height: 70px;">
+                                  <div class="tab-title" style="font-size: 14px;">Invest</div>
+                                  <!-- <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div> -->
+                              </div>
+                              <!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
+                          </a>
+                      </li>
+                        <li >
+                            <a href="#forth" data-toggle="tab">
+                                <div class="tab-info f-line" style=" border-radius: 30px;height: 70px;">
+                                    <div class="tab-title" style="font-size: 14px;">Sell</div>
+                                    <!-- <div class="tab-desc">Sit amet, consectetur adipis cing elit<br />hac divisione rem ipsam prorsus</div> -->
+                                </div>
+                                <!-- <div class="tab-icon"><span class="icon icon-seo-icons-28"></span></div>-->
+                            </a>
+                        </li>
+                      </ul>
+                      
+                      <div class="tab-content animated hiding" data-animation="fadeInLeft" id="feature-content">
+                        <div class="tab-pane in active" id="first">
+                            <div class="ui stackable mobile reversed two column grid">
+                                <div class="seven wide column">
+                                    <img class="f-img" src="assets/image/feature1.png" alt="" style="width: 78%;">
+                                </div>
+                                <div class="nine wide column">
+                                    <p class="f-spec" style="margin-top: 5%; font-family: ubuntu-bold;">Select the product which you like or use daily from our portfolio.</p>
+                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;">Select the Lock-in time which suits you.</p>
+                                    <p class="f-spec disable"style="color: #989898;font-family: ubuntu-bold;">Invest and start with as low as Rs 500!</p>
+                                    <p class="f-spec disable"style="color: #989898;font-family: ubuntu-bold;">Share the products with your family and friends. The sooner it sells the sooner you get the returns.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="second">
+                            <div class="ui stackable mobile reversed two column grid">
+                                <div class="seven wide column">
+                                    <img class="f-img" src="assets/image/feature2.png" alt="" style="width: 78%;">
+                                </div>
+                                <div class="nine wide column">
+                                    <p class="f-spec disable" style="margin-top: 5%; color: #989898;font-family: ubuntu-bold;">Select the product which you like or use daily from our portfolio.</p>
+                                    <p class="f-spec" style="font-family: ubuntu-bold;">Select the Lock-in time which suits you.</p>
+                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;">Invest and start with as low as Rs 500!</p>
+                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;">Share the products with your family and friends. The sooner it sells the sooner you get the returns.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="third">
+                            <div class="ui stackable mobile reversed two column grid">
+                                <div class="seven wide column">
+                                    <img class="f-img" src="assets/image/feature3.png" alt="" style="width: 78%;">
+                                </div>
+                                <div class="nine wide column">
+                                    <p class="f-spec disable"  style="margin-top: 5%; color: #989898;font-family: ubuntu-bold;">Select the product which you like or use daily from our portfolio.</p>
+                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;">Select the Lock-in time which suits you.</p>
+                                    <p class="f-spec" style="font-family: ubuntu-bold;">Invest and start with as low as Rs 500!</p>
+                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;">Share the products with your family and friends. The sooner it sells the sooner you get the returns.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="forth">
+                            <div class="ui stackable mobile reversed two column grid">
+                                <div class="seven wide column">
+                                    <img class="f-img" src="assets/image/feature4.png" alt="" style="width: 94%;">
+                                </div>
+                                <div class="nine wide column">
+                                    <p class="f-spec disable" style="margin-top: 5%; color: #989898;font-family: ubuntu-bold;">Select the product which you like or use daily from our portfolio.</p>
+                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;">Select the Lock-in time which suits you.</p>
+                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;">Invest and start with as low as Rs 500!</p>
+                                    <p class="f-spec" style="font-family: ubuntu-bold;">Share the products with your family and friends. The sooner it sells the sooner you get the returns.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <!-- class="static-header light clearfix" -->
+    <section id="show" style="background-color: whitesmoke;z-index: -2;
+    position: relative; ">
+        <div class="ui stackable two column grid">
+            <div class="nine wide column">
+                <h1 style=" font-family: ubuntu-bold;color: black; font-size: 45px;text-align: center;width: 100%;">Assured <span style="color: #613ae7;">5-20%</span> off, every time you shop!</h1>
+                <div style="position: relative; z-index: 3; background-color: whitesmoke;">
+                    <!-- <h2 style="text-align: center;">Lorem ipsum dolor sit amet.</h2>
+                    <h4 style=" text-align: center;">Lorem ipsum dolor sit amet consectetur.</h4> -->
+                    <ul style=" text-align:left;width: 60%; color: rgb(0, 0, 0);font-family: ubuntu-bold;">
+                     <p style="color: #5c5c5c;font-size: 20px;margin-top: 8%;">As a perk of your investment, get assured 5-20% discount every time you shop on Hutri.</p>
+                     <p style="font-size: 20px;margin-top: 8%;">Discounts on 500+ products, with many more joining the list!
+                     </p>
+                     <p style="font-size: 20px;margin-top: 8%;">Free and Quick Home Delivery!*</p>
+                     <p style="font-size: 20px;margin-top: 8%;">Easy and On-Site Refund!</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="seven wide column" >
+                <div id="infi" style="">
+                    <!-- style="background-image: url(assets/image/show1.jpg)!important;background-repeat: no-repeat;background-size:400px;height: 500px; background-position: right top;transform: rotate(20deg);transform-origin: 5%top right; z-index: 1;" -->
+                    <img src="assets/image/show.png" id="show-img" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <section id="faq" style=" text-align: center;position: relative;z-index: 1;background-color:whitesmoke ;">
+        <h2 style="padding-top: 30px;font-family: ubuntu-bold;color: #613ae7;">Answer to all your questions</h2>
+        <div class="ui stackable three column grid" style="margin-top: 20px!important; width: 90%;padding-left: 10%;">
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0px 0px 6px 0px #3c2096;font-family: ubuntu-regular; border-radius: 25px; width: 80%;"><h3>Lorem ipsum dolor sit amet.<span style="color:#613ae7; font-size: 30px;font-weight: 900;">&#8594</i> </h3></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><h3>Lorem ipsum dolor sit amet<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><h3>Lorem ipsum dolor sit amet<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><h3>Lorem ipsum dolor sit amet<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><h3>Lorem ipsum dolor sit amet<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><h3>Lorem ipsum dolor sit amet<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></button></div>
+            
+        </div>
+          <!-- <div class="ui stackable two column grid" style="margin-top: 20px!important;width: 50%;margin-left: 25%;">
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px;"><h3>Lorem ipsum dolor sit amet<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px;"><h3>Lorem ipsum dolor sit amet<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></button></div>
+          </div> -->
+    </section>
+    <section id="final" style="background-color:#613ae7; padding-top: 30px;">
+        <div class="ui stackable mobile reversed two column grid">
+            <div class="eight wide column" style="text-align: center;">
+                <img src="assets/image/final.png" style="width:55%;overflow: hidden;"  alt="">
+            </div>
+            <div class="eight wide column">
+                <div style=" text-align: center;font-family: ubuntu-bold ;color: #ffffff;padding-top: 5%;" class="final-content">
+                <h1 style="color: #ffffff;font-family: ubuntu-bold ;">One App!</h3>
+                <h3 style="color: #ffffff;font-family: ubuntu-bold ;margin-top: 3%;"><i class="fa fa-arrow-trend-up" aria-hidden="true" style="margin-right: 5px;font-size: 30px;"></i> Invest for Great Returns</p>
+                <h3 style="color: #ffffff;font-family: ubuntu-bold ;margin-top: 3%;"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 7px;font-size: 30px;"></i>Shop for Great Discounts</p>
+                    <a href="#" class="item" style=""><img src="assets/image/playstore.jpg" style="max-width: 150px;margin-top: 8%;" alt=""></a>
+                    <a href="#" class="item" style=""><img src="assets/image/AppStore.png" style="max-width: 150px;margin-top: 8%;"
+                     alt=""></a>
+                </div>
+            </div>
+          </div>
+    </section>
+    <footer style=" position: relative;z-index: 3;  background-color: whitesmoke;" id="footer">
+        <div class="ui stackable two column grid" >
+            <div class="seven wide column" id="up-footer-content" style="">
+                <h2 style="font-family: ubuntu-bold;color: #613ae7;">Hutri</h2>
+                <p style="color: #613ae7; margin-top: 5%;">Shop and invest in your groceries</p>
+                <p style="color: #613ae7;margin-top: 5%;">Earn and Share</p>
+                <p style="color: #613ae7;margin-top: 5%;">Made in India, With Love.</p>
+                
+           </div>
+            <div class="nine wide column" style="text-align: center;color: aliceblue; padding-bottom: 5%;">
+                <div id="footer-input" style="background-color:#D9D9D9; text-align: center; padding: 1%; border-radius: 10px; position: relative;">
+                    <h4 style="font-family: ubuntu-bold; color: #000000;">Join us on Whatsapp</h2>  
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                          +91
+                        </div>
+                        <input type="number" placeholder="" fdprocessedid="o17qu">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:#613ae7;margin-top: 5%;">
+            <div class="ui stackable mobile reversed two column grid">
+                <div class="eight wide column" style="text-align: center;color: rgb(255, 255, 255);">Hutri.in, 2023. All rights reserved.</div>
+                <div class="eight wide column" style="text-align: center;">
+                    <span style="margin-left: 15px;"><i class="fa fa-phone" style="font-size:32px;color: rgb(255, 255, 255);"></i></span>
+                    <span style="margin-left: 15px;"><i class="fa fa-facebook" style="font-size:32px;color: rgb(255, 255, 255);"></i></span>
+                    <span style="margin-left: 15px;"><i class="fa fa-instagram" style="font-size:32px;color: rgb(255, 255, 255);"></i></span>
+                    <span style="margin-left: 15px;"><i class="fa fa-twitter" style="font-size:32px;color: rgb(255, 255, 255);"></i></span>
+                    <span style="margin-left: 15px;"><i class="fa fa-whatsapp" style="font-size:32px;color: rgb(255, 255, 255);"></i></span>
+                    <span style="margin-left: 15px;"><i class="fa fa-telegram" style="font-size:32px;color: rgb(255, 255, 255);"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+
+    <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.plugin.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="assets/js/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/headhesive.min.js"></script>
+	<script type="text/javascript" src="assets/mailchimp/js/mailing-list.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>

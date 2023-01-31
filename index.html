@@ -82,6 +82,10 @@
             }
             }
             @media (max-width: 766px){
+                /* .special- */
+                .footer_img{
+                    width: 100px!important;
+                }
                 .show_content{
                     font-size: 14px;margin-top: 3%;
                     padding-right: 3px;
@@ -120,13 +124,13 @@
                 }
                 #infi{
                 width: 100%;
-                height: 120px;
+                height: 150px;
                 transform-origin: bottom!important;
                 position: relative;
                 /* right: -51%; */
                 transform-style: preserve-3d;
                 /* transform: perspective(33px) rotateZ(24deg); */
-                animation: scrolling 50s infinite cubic-bezier(1,1,1,1);
+                animation: scrolling 60s infinite cubic-bezier(1,1,1,1);
                 z-index: 1;
                 }
             }
@@ -137,6 +141,18 @@
                     width:45% ;
                 }
 
+            }
+            @media (max-width: 1024px) and (min-width: 766px){
+                .special-nav{
+                    display: block!important;
+                    width: 60%!important;
+                    padding-top: 5px;
+                }
+            }
+            @media (min-width: 1024px){
+                .special-nav{
+                    display: none;
+                }
             }
             @media (min-width: 1200px){
                 #feature-line{
@@ -182,13 +198,6 @@
     background: #613ae7;
 }
 
-element.style {
-    border-bottom: 3.5px solid #613ae7;
-    padding: 2px;
-    text-decoration: none;
-    font-family: ubuntu-light;
-    color: black;
-}
 .navigation-header .navigation-bar > li.active > a {
     border-bottom: 2px solid #613ae7;
 }
@@ -201,18 +210,19 @@ element.style {
 }
         </style>
 </head>
-<body id="landing-page" style="font-family: ubuntu-regular;">
+<body id="landing-page" style="font-family: ubuntu-regular; width: 100%!important;">
     <div id="mask">
         <div id="loader"></div>
     </div>
     <header>
-        <nav class="navigation navigation-header" style="text-decoration: none;">
-            <div class="container">
+        <nav class="navigation navigation-header" style="text-decoration: none;width: 100%!important;">
+            <div class="container" style="width: 100%!important;">
                 <div class="navigation-brand" >
                     <div class="brand-logo ">
 						<a href="index.html" class="logo"> <img src="assets/image/hutri.png" style="width: 25%;" alt=""></a>
 						<!-- <span class="sr-only">startup.ly</span> -->
                     </div>
+                    
                     <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown" data-target=".navigation-navbar" style="">
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
@@ -221,12 +231,15 @@ element.style {
                 </div>
                 <div class="navigation-navbar">
                     <ul class="navigation-bar navigation-bar-left">
-                        
+                        <div class="brand-logo">
+                            <a href="index.html" class="logo "> <img class="special-nav" src="assets/image/hutri.png" style="width: 25%;" alt=""></a>
+                            <!-- <span class="sr-only">startup.ly</span> -->
+                        </div>
                         
                     </ul>
                     <ul class="navigation-bar navigation-bar-right">
                         <li class="active"><a href="index.html" style="padding: 2px; text-decoration: none;font-family:ubuntu-light;color: black;">Home</a></li>
-                        <li><a href="#hero" style="font-family:ubuntu-light;color: black;text-decoration: none;">About</a></li>
+                        <!-- <li><a href="#hero" style="font-family:ubuntu-light;color: black;text-decoration: none;">About</a></li> -->
                         <li><a href="#features" style="text-decoration: none;font-family:ubuntu-light;color: black; ">Features</a></li>
 						<!-- <li><a href="#product" style="color: #1b1c1d;text-decoration: none;font-family:Arial, Helvetica, sans-serif ; ">Prices</a></li> -->
                         <li><a href="#faq" style="text-decoration: none;font-family:ubuntu-light;color: black; ">FAQ</a></li>
@@ -244,7 +257,7 @@ element.style {
             <div class="nine wide column" style="text-align: center;color: #5c5c5c; font-family:ubuntu-light;  font-weight: 900;">
                 <h1 style=" padding-top:15%;font-family: ubuntu-bold; font-size: 39px;font-weight: bolder;"><span style="color: #613ae7;">Invest</span> in your own groceries </h1>
                 <h1 style="color: black;font-family: ubuntu-bold; font-size: 39px;"> and earn <span style="color: #613ae7;">14%</span> returns.</h1>
-                <p style="color:#613ae7; font-size: 20px;">Invest for Rs 500 <span style="font-size: 50px; color: hsl(0deg 0% 85%);">|</span> Principle Guaranteed <span style="font-size: 50px; color: hsl(0deg 0% 85%);">|</span> Risk Free</p>
+                <p style="color:#613ae7; font-size: 20px;">Invest for Rs 500 <span style="font-size: 30px; color: hsl(0deg 0% 85%);">|</span> Principle Guaranteed <span style="font-size: 30px; color: hsl(0deg 0% 85%);">|</span> Risk Free</p>
                 <p style="font-size: 36px;">Download Hutri</p>
                 
                 <button style="margin-top: 15px; background-color: #613ae7; border-radius: 50px;" class="ui huge primary button disabled">
@@ -463,8 +476,9 @@ element.style {
                 <h1 style="color: #ffffff;font-family: ubuntu-bold ;">One App!</h3>
                 <h3 style="color: #ffffff;font-family: ubuntu-bold ;margin-top: 3%;"><i class="fa fa-arrow-trend-up" aria-hidden="true" style="margin-right: 5px;font-size: 25px;"></i> Invest for Great Returns</p>
                 <h3 style="color: #ffffff;font-family: ubuntu-bold ;margin-top: 3%;"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 7px;font-size: 25px;"></i>Shop for Great Discounts</p>
-                    <button style="max-width: 150px;margin-top: 12%; background-color: #ffffff00;" class="ui huge button"><a href="#" class="item" style=""><img src="assets/image/playstore.jpg" style="max-width: 150px" alt=""></a></button>
-                    <button style="max-width: 150px;margin-top: 12%; background-color: #ffffff00;" class="ui huge button disabled"><a href="#" class="item" style="max-width: 150px;"><img src="assets/image/AppStore.png" alt="" style="max-width: 150px"></a></button>
+                    <button style="margin-top: 12%; background-color: #ffffff00;" class="ui huge button"><a href="#" class="item" style=""><img src="assets/image/playstore.jpg"class="footer_img" style="max-width: 150px" alt=""></a></button>
+
+                    <button  style="margin-top: 12%; background-color: #ffffff00;" class="ui huge button disabled"><a href="#" class="item" style=""><img src="assets/image/AppStore.png" class="footer_img" alt="" style="max-width: 150px"></a></button>
                 </div>
             </div>
           </div>

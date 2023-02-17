@@ -41,23 +41,44 @@
                     display: none;
                 }
                 .f-spec{
-                    font-size: 20px;
+                    font-size: 20px!important;
                 }
             }
             @media (min-width: 766px){
+                
+                .faq-content{
+                    margin: 13px!important;
+                }
+                .feature-content{
+                    font-size: 15px!important;
+                }
                 .show_content{
                     font-size: 20px;margin-top: 8%;
                 }
                 #show{
-                    height: 100%;
+                    height: 90%;
                 }
                 #show-img{
                     width:700px;
                 }
 
-                #up-footer-content{
+                #up-footer-content1{
                     text-align: left;
-                    padding-left:  5%;
+                    padding-top: 5%!important;
+                    font-size: 38px;
+                    padding-left:  5%!important;
+                }
+                #up-footer-content2{
+                    text-align: left;
+                    padding-top: 12%!important;
+                    font-size: 38px;
+                    padding-left:  5%!important;
+                }
+                .up-footer-content1-a{
+                    margin-top: 7%;
+                }
+                .up-footer-content2-a{
+                    margin-top: 10%;
                 }
                 @keyframes scrolling{
                  0%{
@@ -65,13 +86,13 @@
                     top: 55%;
                  }
                  100%{
-                    right: -110%;
-                    top:-80%;
+                    right: -95%;
+                    top:-72%;
                  }
                 }
                 #infi{
                 overflow: hidden;
-                width: 700px!important;
+                width: 800px!important;
                 transform-origin: top right!important;
                 position: relative;
                 right: -51%;
@@ -83,8 +104,8 @@
             }
             @media (max-width: 766px){
                 /* .special- */
-                .footer_img{
-                    width: 100px!important;
+                #footer_img{
+                    width: 85%!important;
                 }
                 .show_content{
                     font-size: 14px;margin-top: 3%;
@@ -109,7 +130,7 @@
                     position: relative;
                     z-index: 1;
                 }
-                #up-footer-content{
+                #up-footer-content1{
                     text-align:center;
                 }
                 @keyframes scrolling{
@@ -238,13 +259,13 @@
                         
                     </ul>
                     <ul class="navigation-bar navigation-bar-right">
-                        <li class="active"><a href="index.html" style="padding: 2px; text-decoration: none;font-family:ubuntu-light;color: black;">Home</a></li>
+                        <li class="active"><a href="#hero" style="padding: 2px; text-decoration: none;font-family:ubuntu-light;color: black;font-size: 15px;">Home</a></li>
                         <!-- <li><a href="#hero" style="font-family:ubuntu-light;color: black;text-decoration: none;">About</a></li> -->
-                        <li><a href="#features" style="text-decoration: none;font-family:ubuntu-light;color: black; ">Features</a></li>
+                        <li><a href="#features" style="text-decoration: none;font-family:ubuntu-light;color: black;font-size: 15px; ">Features</a></li>
 						<!-- <li><a href="#product" style="color: #1b1c1d;text-decoration: none;font-family:Arial, Helvetica, sans-serif ; ">Prices</a></li> -->
-                        <li><a href="#faq" style="text-decoration: none;font-family:ubuntu-light;color: black; ">FAQ</a></li>
+                        <li><a href="#faq" style="text-decoration: none;font-family:ubuntu-light;color: black; font-size: 15px;">FAQ</a></li>
                         <!-- <li><a href="#team" style="color: #1b1c1d;text-decoration: none;">Team</a></li> -->
-                        <li><a href="#footer" style="text-decoration: none;font-family:ubuntu-light;color: black; ">Contacts</a></li>
+                        <li><a href="#footer" style="text-decoration: none;font-family:ubuntu-light;color: black; font-size: 15px;">Contacts</a></li>
                     </ul>  
                 </div>
             </div>
@@ -255,9 +276,9 @@
     <section id="hero" style="background-color: whitesmoke; padding-top: 80px;">
         <div class="ui stackable two column grid" >
             <div class="nine wide column" style="text-align: center;color: #5c5c5c; font-family:ubuntu-light;  font-weight: 900;">
-                <h1 style=" padding-top:15%;font-family: ubuntu-bold; font-size: 39px;font-weight: bolder;"><span style="color: #613ae7;">Invest</span> in your own groceries </h1>
-                <h1 style="color: black;font-family: ubuntu-bold; font-size: 39px;"> and earn <span style="color: #613ae7;">14%</span> returns.</h1>
-                <p style="color:#613ae7; font-size: 20px;">Invest for Rs 500 <span style="font-size: 30px; color: hsl(0deg 0% 85%);">|</span> Principle Guaranteed <span style="font-size: 30px; color: hsl(0deg 0% 85%);">|</span> Risk Free</p>
+                <h1 style=" padding-top:15%;font-family: ubuntu-bold; font-size: 40px;font-weight: bolder;"><span style="color: #613ae7;">Invest</span> in your own groceries </h1>
+                <h1 style="color: black;font-family: ubuntu-bold; font-size: 40px;"> and earn <span style="color: #613ae7;">14%</span> returns.</h1>
+                <p style="color:#613ae7; font-size: 22px;">Invest for Rs 500 <span style="font-size: 32px; color: hsl(0deg 0% 85%);">|</span> Principle Guaranteed <span style="font-size: 32px; color: hsl(0deg 0% 85%);">|</span> Risk Free</p>
                 <p style="font-size: 36px;">Download Hutri</p>
                 
                 <button style="margin-top: 15px; background-color: #613ae7; border-radius: 50px;" class="ui huge primary button disabled">
@@ -327,7 +348,7 @@
                         <li class="active" >
                             <a href="#first" data-toggle="tab">
                                 <div class="tab-info f-line"  style="">
-                                    <div class="tab-title" style="font-size: 12px;">Choose Product</div>
+                                    <div class="tab-title feature-content" style="font-size: 12px; padding-bottom: 2px!important;">Choose Product</div>
                                 </div>
                                 <!--<div class="tab-icon"><span class="icon icon-multimedia-20"></span></div>-->
                             </a>
@@ -335,7 +356,7 @@
                         <li>
                             <a href="#second" data-toggle="tab">
                                 <div class="tab-info f-line" style="">
-                                    <div class="tab-title" style="font-size: 12px;">Lock in Time</div>
+                                    <div class="tab-title feature-content" style="font-size: 12px;">Lock in Time</div>
                                     <!-- <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div> -->
                                 </div>
                                 <!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
@@ -344,7 +365,7 @@
                         <li>
                           <a href="#third" data-toggle="tab">
                               <div class="tab-info f-line"style="">
-                                  <div class="tab-title" style="font-size: 12px;">Invest</div>
+                                  <div class="tab-title feature-content" style="font-size: 12px;">Invest</div>
                                   <!-- <div class="tab-desc">Sit amet, consectetur adipiscing elit<br />hac divisione rem ipsam prorsus</div> -->
                               </div>
                               <!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
@@ -353,7 +374,7 @@
                         <li >
                             <a href="#forth" data-toggle="tab">
                                 <div class="tab-info f-line" style=" ">
-                                    <div class="tab-title" style="font-size: 12px;">Sell</div>
+                                    <div class="tab-title feature-content" style="font-size: 12px;">Sell</div>
                                     <!-- <div class="tab-desc">Sit amet, consectetur adipis cing elit<br />hac divisione rem ipsam prorsus</div> -->
                                 </div>
                                 <!-- <div class="tab-icon"><span class="icon icon-seo-icons-28"></span></div>-->
@@ -368,10 +389,10 @@
                                     <img class="f-img" src="assets/image/feature1.png" alt="" style="width: 73%;">
                                 </div>
                                 <div class="nine wide column">
-                                    <p class="f-spec" style="margin-top: 5%; font-family: ubuntu-bold;">Select the product which you like or use daily from our portfolio.</p>
-                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;">Select the Lock-in time which suits you.</p>
-                                    <p class="f-spec disable"style="color: #989898;font-family: ubuntu-bold;">Invest and start with as low as Rs 500!</p>
-                                    <p class="f-spec disable"style="color: #989898;font-family: ubuntu-bold;">Share the products with your family and friends. The sooner it sells the sooner you get the returns.</p>
+                                    <p class="f-spec" style="margin-top: 3%; font-family: ubuntu-bold; font-size: 18px;">Select the product which you like or use daily from our portfolio.</p>
+                                    <p class="f-spec disable" style="color: #989898;font-family: ubuntu-bold;font-size: 18px;">Select the Lock-in time which suits you.</p>
+                                    <p class="f-spec disable"style="color: #989898;font-family: ubuntu-bold; font-size: 18px;">Invest and start with as low as Rs 500!</p>
+                                    <p class="f-spec disable"style="color: #989898;font-family: ubuntu-bold; font-size: 18px;">Share the products with your family and friends. The sooner it sells the sooner you get the returns.</p>
 
                                 </div>
                             </div>
@@ -451,14 +472,14 @@
        
     </section>
     <section id="faq" style=" text-align: center;position: relative;z-index: 1;background-color:whitesmoke ;">
-        <h2 style="padding-top: 30px;font-family: ubuntu-bold;color: #613ae7;">Answer to all your questions</h2>
+        <h1 style="padding-top: 30px;font-family: ubuntu-bold;color: #613ae7; word-spacing: 8px;">Answer <span style="color: #000000;"> to all your </span>questions</h2>
         <div class="ui stackable three column grid" style="margin-top: 20px!important; width: 90%;padding-left: 10%;">
-            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0px 0px 6px 0px #3c2096;font-family: ubuntu-regular; border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>Question 1<span style="color:#613ae7; font-size: 30px;font-weight: 900;">&#8594</i> </h3></a></button></div>
-            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>Question 2<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
-            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>Question 3<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
-            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>Question 4<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
-            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html"style="text-decoration: none; color: #613ae7;"><h3>Question 5<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
-            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>Question 6<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0px 0px 6px 0px #3c2096;font-family: ubuntu-regular; border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h2 class="faq-content">What is Hutri?<span style="color:#613ae7; font-size: 30px;font-weight: 900;">&#8594</i> </h3></a></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>How much minimum can I invest? <span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>Is there any locking period?<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>Is my investment risk free?<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html"style="text-decoration: none; color: #613ae7;"><h3>Can I take out my money early?<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
+            <div class="column"><button type="button" class="ui huge primary button" style="background-color:#ffffff; color: #000000;box-shadow: 0.5px 0.5px 6px 0px #3c2096;font-family: ubuntu-regular;border-radius: 25px; width: 80%;"><a href="faq.html" style="text-decoration: none; color: #613ae7;"><h3>Can I shop in Hutri?<span style="color: #613ae7; font-size: 30px;font-weight: 900;">&#8594</i></h3></a></button></div>
             
         </div>
           <!-- <div class="ui stackable two column grid" style="margin-top: 20px!important;width: 50%;margin-left: 25%;">
@@ -483,28 +504,31 @@
             </div>
           </div>
     </section>
-    <footer style=" position: relative;z-index: 3;  background-color: whitesmoke;" id="footer">
-        <div class="ui stackable two column grid" >
-            <div class="seven wide column" id="up-footer-content" style="">
-                <h2 style="font-family: ubuntu-bold;color: #613ae7;">Hutri</h2>
-                <p style="color: #613ae7; margin-top: 5%;">Shop and invest in your groceries</p>
-                <p style="color: #613ae7;margin-top: 5%;">Earn and Share</p>
-                <p style="color: #613ae7;margin-top: 5%;">Made in India, With Love.</p>
+    <footer style=" position: relative;z-index: 3;  background-color: rgb(0, 0, 0);" id="footer" >
+        <div class="ui stackable three column grid"  >
+            <div class="five wide column" id="up-footer-content1" >
+                    <h2 class="up-footer-content1-a" style="font-family: ubuntu-bold;color: #ffffff; font-size: 38px;">Hutri</h2>
+                    <p class="up-footer-content1-a" style="color: #ffffff; margin-top: 15%;">Shop and invest in your groceries</p>
+                    <p class="up-footer-content1-a" style="color: #ffffff;">Earn and Share</p>
+                    <p class="up-footer-content1-a" style="color: #ffffff;">Made in India, With Love.</p>
+
+                    
+
                 
-           </div>
-            <div class="nine wide column" style="text-align: center;color: aliceblue; padding-bottom: 5%;">
-                <div id="footer-input" style="background-color:#D9D9D9; text-align: center; padding: 1%; border-radius: 10px; position: relative;">
-                    <h4 style="font-family: ubuntu-bold; color: #000000;">Join us on Whatsapp</h2>  
-                    <div class="ui labeled input">
-                        <div class="ui label">
-                          +91
-                        </div>
-                        <input type="number" placeholder="" fdprocessedid="o17qu">
-                    </div>
+            </div>
+            <div class="four wide column" id="up-footer-content2">
+                <p><a href="faq.html" class="up-footer-content2-a" style="color: #ffffff;padding-top: 30%;">FAQ</a></p>
+                <p><a href="t&c.html" class="up-footer-content2-a" style="color: #ffffff;">Terms & Conditions*</a></p>
+                <p><a href="privacy.html" class="up-footer-content2-a" style="color: #ffffff;">Privacy policy</a></p>
+            </div>
+            
+            <div class="seven wide column">
+                <div style="width:100%; padding-top: 10%;position: relative; top: 1%;">
+                    <img src="assets/image/footer.png" id="footer_img" style="width:80%;position:relative;right: -20%;top: -1%;" alt="">
                 </div>
             </div>
         </div>
-        <div style="background-color:#613ae7;margin-top: 5%;">
+        <div style="background-color:#613ae7;">
             <div class="ui stackable mobile reversed two column grid">
                 <div class="eight wide column" style="text-align: center;color: rgb(255, 255, 255);margin-top: 5px;">Hutri.in, 2023. All rights reserved.</div>
                 <div class="eight wide column" style="text-align: center;">
@@ -514,7 +538,7 @@
                     <!-- <span style="margin-left: 15px;"><i class="fa fa-twitter" style="font-size:32px;color: rgb(255, 255, 255);"></i></span> -->
                     <span style="margin-left: 15px;"><a href="https://wa.me/916370341225" target="_blank"><i class="fa fa-whatsapp" style="font-size:32px;color: rgb(255, 255, 255);"></i></a></span>
                     <span style="margin-left: 15px;"><i class="fa fa-telegram" style="font-size:32px;color: rgb(255, 255, 255);"></i></span>
-                    <p><span style="margin-right: 10px;"><a href="t&c.html" style="color: #ffffff;">Terms & Conditions*</a></span> <span><a href="privacy.html" style="color: #ffffff;">Privacy policy</a></span></p>
+                    <!-- <p><span style="margin-right: 10px;"><a href="t&c.html" style="color: #ffffff;">Terms & Conditions*</a></span> <span><a href="privacy.html" style="color: #ffffff;">Privacy policy</a></span></p> -->
 
                 </div>
             </div>

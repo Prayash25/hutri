@@ -32,39 +32,50 @@
             <script src="assets/js/respond.min.js"></script>
         <![endif]-->
         <style>
+            /* navbar */
             .navigation-header .navigation-bar-left > li.active > a{
                 border-bottom: 4px solid #613ae7;
 
             }
-            @media (max-width: 1199px){
-                .disable{
-                    display: none;
-                }
-                .f-spec{
-                    font-size: 20px!important;
-                }
-            }
+            #featuredTab li.active > a .tab-info{
+          background: #613ae7;
+        }
+        #featuredTab li > a .tab-info .tab-title {
+          font-size: 17px;
+          font-family: ubuntu-regular;
+          line-height: 21px;
+          color:#613ae7;
+          text-transform: uppercase;
+          padding-bottom: 10px;
+          font-weight: 600;
+        }
+        .navigation-toggle {
+          border: 1px solid #613ae7;
+        }
+        .navigation-toggle .icon-bar {
+          background: #613ae7;
+        }
+
+        .navigation-header .navigation-bar > li.active > a {
+          border-bottom: 2px solid #613ae7;
+        }
+        .fixmenu-clone.navigation-header .navigation-toggle {
+          border: 1px solid #613ae7;
+        }
+
+        .fixmenu-clone.navigation-header .navigation-toggle .icon-bar {
+          background: #613ae7;
+        }
+
             @media (min-width: 766px){
-                #show_ul{
-                    text-align:left;width: 70%; 
-                    padding-top: 8%;
-                }
+                
                 .faq-content{
                     margin: 11px!important;
                 }
                 .feature-content{
                     font-size: 15px!important;
                 }
-                .show_content{
-                    font-size: 20px;margin-top: 8%;
-                }
-                #show{
-                    height: 90%;
-                }
-                #show-img{
-                    width:700px;
-                }
-
+                /* footer */
                 #up-footer-content1{
                     text-align: left;
                     padding-top: 5%!important;
@@ -82,6 +93,20 @@
                 }
                 .up-footer-content2-a{
                     margin-top: 10%;
+                }
+                /* show */
+                .show_content{
+                    font-size: 20px;margin-top: 8%;
+                }
+                #show{
+                    height: 90%;
+                }
+                #show-img{
+                    width:700px;
+                }
+                #show_ul{
+                    text-align:left;width: 70%; 
+                    padding-top: 8%;
                 }
                 @keyframes scrolling{
                  0%{
@@ -107,6 +132,7 @@
             }
             @media (max-width: 766px){
                 /* .special- */
+                /* navbar  */
                 .navigation-navbar.open{
                     border-top:1.5px solid #613ae7;
                 }
@@ -116,16 +142,6 @@
                 .special-nav{
                     display: none;
                 }
-                #footer_img{
-                    width: 85%!important;
-                }
-                .show_content{
-                    font-size: 14px;margin-top: 3%;
-                    margin-right: 10%;
-                    text-align: center!important;
-                    
-                }
-                #show_ul{width:100%! important;margin: 0px!important;}
                 .navigation-header .navigation-bar > li > a:Hover, .navigation-header .navigation-bar > li.active > a {
                  color:#613ae7!important;
                  border-bottom: 2px solid #613ae7!important;
@@ -133,8 +149,16 @@
                 .navigation-header .navigation-bar > li > a:Hover, .navigation-header .navigation-bar > li > a {
                  color: #613ae7!important;
                 }
+                /* hero */
                 #hero{
                     padding-top: 60px!important;
+                }
+                /* show */
+                .show_content{
+                    font-size: 14px;margin-top: 3%;
+                    margin-right: 10%;
+                    text-align: center!important;
+                    
                 }
                 #show-img{
                     width: 100%;
@@ -142,9 +166,7 @@
                     position: relative;
                     z-index: 1;
                 }
-                #up-footer-content1{
-                    text-align:center;
-                }
+                #show_ul{width:100%! important;margin: 0px!important;}
                 @keyframes scrolling{
                  0%{
                     /* right: 20%; */
@@ -165,6 +187,13 @@
                 /* transform: perspective(33px) rotateZ(24deg); */
                 animation: scrolling 60s infinite cubic-bezier(1,1,1,1);
                 z-index: 1;
+                }
+                /* footer */
+                #footer_img{
+                    width: 85%!important;
+                }
+                #up-footer-content1{
+                    text-align:center;
                 }
             }
             @media (min-width: 1000px){
@@ -189,6 +218,14 @@
                 
                 .special-nav{
                     display: none;
+                }
+            }
+            @media (max-width: 1199px){
+                .disable{
+                    display: none;
+                }
+                .f-spec{
+                    font-size: 20px!important;
                 }
             }
             @media (min-width: 1200px){
@@ -216,35 +253,7 @@
             }
             
             
-        #featuredTab li.active > a .tab-info{
-          background: #613ae7;
-        }
-        #featuredTab li > a .tab-info .tab-title {
-          font-size: 17px;
-          font-family: ubuntu-regular;
-          line-height: 21px;
-          color:#613ae7;
-          text-transform: uppercase;
-          padding-bottom: 10px;
-          font-weight: 600;
-        }
-        .navigation-toggle {
-    border: 1px solid #613ae7;
-}
-.navigation-toggle .icon-bar {
-    background: #613ae7;
-}
-
-.navigation-header .navigation-bar > li.active > a {
-    border-bottom: 2px solid #613ae7;
-}
-.fixmenu-clone.navigation-header .navigation-toggle {
-    border: 1px solid #613ae7;
-}
-
-.fixmenu-clone.navigation-header .navigation-toggle .icon-bar {
-    background: #613ae7;
-}
+        
         </style>
 </head>
 <body id="landing-page" style="font-family: ubuntu-regular; width: 100%!important;">
